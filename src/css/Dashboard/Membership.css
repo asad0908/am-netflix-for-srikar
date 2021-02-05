@@ -1,0 +1,91 @@
+.membership {
+  margin-top: 10px;
+}
+
+.membership__title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__input {
+  height: 60px;
+  min-width: 550px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  outline: none;
+  padding: 2px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.form__label {
+  color: green;
+  position: absolute;
+  top: 24px;
+  left: 10px;
+  transition: all 0.2s;
+  color: #8c8c8c;
+  font-weight: 500;
+  cursor: text;
+}
+
+.form__button {
+  border: 0;
+  border-left: 1px solid #333;
+  font-size: 1.625rem;
+  min-height: 60px;
+  background-color: #f40612;
+  color: #fff;
+  min-width: 250px;
+}
+
+.form__button:focus {
+  background-color: #f40612;
+  outline: 0;
+  border: 0;
+}
+
+.form__button:hover {
+  background-color: #e50914;
+  cursor: pointer;
+}
+
+.membership__formControl {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.form__buttonText {
+  padding: 1.2rem;
+}
+
+.form__input:focus + label {
+  top: 0.4px;
+  font-size: 12px;
+  padding: 3.4px;
+}
+
+.form__loading {
+  top: 0.4px;
+  padding: 3.4px;
+  height: 50px;
+}
+
+.hasText + label {
+  top: 0.4px;
+  font-size: 12px;
+  padding: 3.4px;
+}
+
+.membership__error {
+  color: #ffa00a;
+  text-align: left;
+  margin-bottom: -6px;
+  padding: 6px 3px;
+  font-size: 15px;
+}

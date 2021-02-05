@@ -1,0 +1,24 @@
+.faq {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+  border-bottom: 8px solid #222;
+  padding-bottom: 75px;
+}
+
+.faq__title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.faq__list {
+  width: 75%;
+  margin: 1.25em auto;
+  max-width: 815px;
+}

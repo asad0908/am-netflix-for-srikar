@@ -1,0 +1,57 @@
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 8px solid #222222;
+}
+
+.footer__dark {
+  background-color: #000;
+  margin-top: -40px;
+}
+
+.footer__light {
+  border-top: 8px solid wheat;
+  margin-top: 80px;
+}
+
+.myDetails {
+  margin-top: 60px;
+}
+
+.myDetails h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.myDetails__light h2 {
+  color: #000;
+}
+
+.myDetails h2 a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.myDetails__light h2 a {
+  color: #f6121d;
+}
+
+.contact__me {
+  margin-top: 20px;
+}
+.contact__me a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.contact__me--light a {
+  color: #000;
+  font-weight: bold;
+}

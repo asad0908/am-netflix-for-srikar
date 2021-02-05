@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+.faqQuestion__listItem {
+  list-style-type: none;
+  margin: 0 0 8px 0;
+  margin-left: 1.1em;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.faqQuestion__button {
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 1.65rem;
+}
+
+.faqQuestion__button > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqQuestion__button:focus {
+  outline: 0;
+}
+
+.faqQuestion__text {
+  display: block;
+  text-align: left;
+  background: #303030;
+  color: #fff;
+}
+
+.faqQuestion__ans {
+  display: block;
+  text-align: left;
+  background: #303030;
+  overflow: hidden;
+}
+
+.faqQuestion__ans.closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faqQuestion__ans.open {
+  max-height: 1200px;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faqQuestion__ans span {
+  display: inline-block;
+  padding: 1.2em;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 1.4rem;
+  font-weight: 400;
+}
