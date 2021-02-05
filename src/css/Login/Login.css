@@ -1,0 +1,470 @@
+.login {
+  width: 100%;
+  position: relative;
+  height: 110vh;
+  z-index: 1;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/85e22987-d2dd-46ca-b8b7-65cd0e31c24a/5270b662-fc08-4ff7-951c-8216bef2aa26/IN-en-20201123-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__background {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100vw;
+  height: 110vh;
+  z-index: -1;
+}
+
+.login__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  border-bottom: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.login__logoImage {
+  object-fit: contain;
+  margin-left: 15px;
+  display: inline-block;
+  line-height: 90px;
+  height: 56px;
+  padding: 22px;
+}
+
+.login__body {
+  margin: 0 auto;
+  min-height: 80vh;
+  background-color: transparent;
+  max-width: 450px;
+  color: #333;
+  padding: 5% 5%;
+}
+
+.login__content {
+  padding: 60px 68px 40px;
+  margin-bottom: 90px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  min-height: 660px;
+}
+
+.login__content--main {
+  /* -webkit-box-flex: 1;
+    flex-grow: 1; */
+  margin-bottom: 50px;
+}
+
+.login__content--main > h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700px;
+  margin: 0 0 10px 0;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.login__email {
+  padding-bottom: 16px;
+  max-width: 87%;
+  position: relative;
+}
+
+.login__emailInput {
+  background: #333;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  height: 35px;
+  line-height: 50px;
+  padding: 16px 20px 0;
+  width: 100%;
+}
+
+.email__label {
+  position: absolute;
+  left: 20px;
+  top: 40%;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+  transform: translateY(-50%);
+  cursor: text;
+}
+
+.login__emailInput:focus + label {
+  top: 20%;
+  left: 15px;
+  font-size: 0.7rem;
+}
+
+.login__emailInput:focus {
+  outline: 0;
+}
+
+.login__email::after {
+  border-bottom: 2px solid #e87c03;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  bottom: 0;
+  top: 43px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 114.7%;
+}
+
+.login__emailNot::after {
+  display: none;
+}
+
+.login__password {
+  padding-bottom: 16px;
+  max-width: 100%;
+  position: relative;
+}
+
+.flexdir {
+  display: flex;
+  border-radius: 4px;
+  border: 0;
+  background-color: #333;
+}
+
+.input__label {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.login__passwordInput {
+  height: 50px;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  line-height: 50px;
+  padding: 16px 20px 0;
+  background: 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: block;
+  appearance: none;
+}
+
+.login__passwordInput:focus {
+  border: 0;
+  outline: 0;
+}
+
+.password__label {
+  position: absolute;
+  top: 26%;
+  left: 20px;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+  cursor: text;
+}
+
+.login__passwordInput:focus + .password__label,
+.hasText + .password__label {
+  font-size: 11px;
+  top: 7px;
+  left: 17px;
+  transform: translateY(0);
+}
+
+.hasText + .email__label {
+  top: 20%;
+  left: 15px;
+  font-size: 0.7rem;
+}
+
+.btn-toggle {
+  height: 50px;
+  padding: 0 12px;
+  display: none;
+  cursor: pointer;
+  appearance: none;
+  color: #8c8c8c;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: -3px;
+}
+
+.login__password::after {
+  border-bottom: 2px solid #e87c03;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  bottom: 0;
+  top: 43px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+.login__passwordNot::after {
+  display: none;
+}
+
+.errorEmail {
+  color: #e87c03;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding: 6px 3px;
+  font-size: 13px;
+}
+
+.errorPassword {
+  color: #e87c03;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.login__submitBtn {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 12px;
+  width: 100%;
+  max-width: 100%;
+  padding: 16px;
+  background: #e50914;
+  display: inline-block;
+  min-width: 98px;
+  min-height: 37px;
+  line-height: 1em;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: 0.1px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.login__help {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.login__rememberMe {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+.login__rememberMe input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rememberMe {
+  margin-right: 10px;
+}
+
+.login__help .login__rememberMe input[type="checkbox"] + label {
+  padding: 0;
+  color: #333;
+  position: relative;
+  display: block;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.login__help .login__rememberMe input[type="checkbox"] + label::before {
+  background: #737373;
+  border-radius: 2px;
+  border: 0;
+  height: 16px;
+  left: -20px;
+  width: 16px;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 2px;
+  padding: 0;
+}
+
+.login__help .login__rememberMe input[type="checkbox"]:focus + label::before {
+  background: #e6e6e6;
+  box-shadow: none;
+}
+
+.rememberMeSpan {
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.login__help .login__rememberMe input[type="checkbox"]:checked + label::after {
+  color: #000;
+  font-size: 16px;
+  position: absolute;
+  left: -20px;
+  top: 1.2px;
+  content: "\f00c";
+  font-family: FontAwesome;
+}
+
+.login__helpLink {
+  color: #b3b3b3;
+  -webkit-box-flex: 0;
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 2px;
+  text-decoration: none;
+}
+
+.login__content--other {
+  -webkit-box-flex: 0;
+}
+
+.login__facebook--btn {
+  margin-bottom: 0;
+}
+
+.login__facebook--btn hr {
+  display: none;
+  background: #ccc;
+  height: 1px;
+  border: none;
+}
+
+.login__facebook--btnMain {
+  margin-top: 16px;
+  min-height: 0;
+  border: none;
+  background: 0 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 13px;
+  min-width: 98px;
+  line-height: 1em;
+  color: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.login__facebook--btnMain:hover {
+  text-decoration: none;
+}
+
+.fb__login {
+  background: 0 0;
+  color: #0080ff;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  margin-left: -10px;
+}
+
+.fb__login > img {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.fb__login > img::before {
+  background: #3b5998;
+  padding-left: 1px;
+  padding-right: 1px;
+  content: "\e628";
+}
+
+.fb__login span {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.login__signup {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.login__signup a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login__recaptcha {
+  margin-top: 11px;
+  font-size: 13px;
+  color: #8c8c8c;
+  position: relative;
+  text-align: left;
+}
+
+.recaptcha-btn {
+  background: transparent;
+  border: none;
+  color: #0071eb;
+  margin-left: 3px;
+  cursor: pointer;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+.recaptchaText {
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}

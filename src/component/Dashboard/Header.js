@@ -3,14 +3,22 @@ import { Link, useHistory } from "react-router-dom";
 import "../../css/Dashboard/Header.css";
 import Membership from "./Membership";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { useDispatch, useSelector } from "react-redux";
+import { auth } from "../../firebase";
 
 const Header = () => {
   const history = useHistory();
-  const user = null;
+  const user = useSelector((state) => state.User.user);
+  const dispatch = useDispatch();
+
+  const signoutUser = () => {
+    localStorage.clear();
+    auth.signOut();
+  };
 
   const GoToApp = () => {
     return (
-      <button onClick={() => history.push("/browse")} className="goToApp">
+      <button onClick={() => history.push("/profile")} className="goToApp">
         <span className="form__buttonText">
           GO TO APP <ArrowForwardIosIcon />
         </span>
@@ -32,7 +40,7 @@ const Header = () => {
           {user ? (
             <button
               style={{ border: 0 }}
-              //   onClick={signoutUser}
+              onClick={signoutUser}
               className="header__button"
             >
               Sign Out

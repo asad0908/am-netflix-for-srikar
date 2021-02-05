@@ -1,0 +1,10 @@
+.simpleContainer {
+  padding-bottom: 95px;
+  width: 100%;
+  display: block;
+  transform: none;
+  opacity: 1;
+  transition-duration: 250ms;
+  overflow: hidden;
+  box-sizing: border-box;
+}

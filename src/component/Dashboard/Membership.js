@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../css/Dashboard/Membership.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { useHistory } from "react-router-dom";
+import db from "../../firebase";
 
 const Membership = () => {
   const [email, setEmail] = useState("");
@@ -21,23 +22,23 @@ const Membership = () => {
       const btn = document.querySelector(".form__button");
       btn.style.opacity = 0.8;
       setLoading(true);
-      //   setTimeout(() => {
-      //     db.collection("users")
-      //       .doc(email)
-      //       .get()
-      //       .then((doc) => {
-      //         if (doc.exists) {
-      //           //logic
-      //           setError("Email already in use!");
-      //         } else {
-      //           //logic
-      //           history.push(`/signup/${emailEncrypt}/welcome`);
-      //         }
-      //       })
-      //       .catch((err) => alert(err.message));
-      //     setLoading(false);
-      //     btn.style.opacity = 1;
-      //   }, 1000);
+      setTimeout(() => {
+        db.collection("users")
+          .doc(email)
+          .get()
+          .then((doc) => {
+            if (doc.exists) {
+              //logic
+              setError("Email already in use!");
+            } else {
+              //logic
+              history.push(`/signup/${emailEncrypt}/welcome`);
+            }
+          })
+          .catch((err) => alert(err.message));
+        setLoading(false);
+        btn.style.opacity = 1;
+      }, 1000);
     }
   };
 

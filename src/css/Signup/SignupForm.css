@@ -1,0 +1,272 @@
+.regForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 0em;
+}
+
+.regFormContainer {
+  text-align: left;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.regFormHeader {
+  margin-top: 40px;
+}
+
+.regFormHeader span {
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.regFormHeader h1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 23px;
+  margin-top: 6px;
+  margin-bottom: 13px;
+}
+
+.regFormHeader p {
+  font-size: 19px;
+}
+
+.regFormInput {
+  margin: 10px 0 20px;
+  box-sizing: border-box;
+}
+
+.regFormEmailInput {
+  margin-bottom: 10px;
+  max-width: 500px;
+  position: relative;
+}
+
+.regFormUsernameInput {
+  margin-bottom: 10px;
+  max-width: 500px;
+  position: relative;
+}
+
+.regFormUsernameInput .regForm__usernameInput {
+  height: 60px;
+  padding: 10px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: solid 1px #8c8c8c;
+  border-radius: 2px;
+  display: block;
+  appearance: none;
+  color: black;
+  line-height: normal;
+}
+
+.regFormUsernameInput label {
+  padding: 0;
+  position: absolute;
+  font-size: 16px;
+  top: 50%;
+  left: 10px;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+  transform: translateY(-50%);
+}
+
+.regFormUsernameInput .regForm__usernameInput:focus + label {
+  top: 6px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormUsernameInput .hasText + label {
+  top: 6px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormUsernameInput .regForm__usernameInput:focus {
+  border-color: #0071eb;
+  outline: 0;
+}
+
+.regFormUsernameInput .error {
+  border-color: #b92d2b;
+}
+
+.regFormUsernameInput .valid {
+  border-color: #5fa53f;
+}
+
+.regFormEmailInput .regForm__emailInput {
+  height: 60px;
+  padding: 10px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: solid 1px #8c8c8c;
+  border-radius: 2px;
+  display: block;
+  appearance: none;
+  color: black;
+  line-height: normal;
+}
+
+.regFormEmailInput label {
+  padding: 0;
+  position: absolute;
+  font-size: 16px;
+  top: 50%;
+  left: 10px;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+  transform: translateY(-50%);
+}
+
+.regFormEmailInput .regForm__emailInput:focus + label {
+  top: 6px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormEmailInput .hasText + label {
+  top: 6px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormPasswordInput .hasText + label {
+  top: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormEmailInput .regForm__emailInput:focus {
+  border-color: #0071eb;
+  outline: 0;
+}
+
+.regFormEmailInput .error {
+  border-color: #b92d2b;
+}
+
+.regFormEmailInput .valid {
+  border-color: #5fa53f;
+}
+
+.regFormPasswordInput {
+  margin-bottom: 10px;
+  max-width: 500px;
+  position: relative;
+}
+
+.regFormPasswordInput .regForm__passwordInput {
+  height: 60px;
+  padding: 10px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: solid 1px #8c8c8c;
+  border-radius: 2px;
+  display: block;
+  appearance: none;
+  color: black;
+  line-height: normal;
+}
+
+.regFormPasswordInput label {
+  position: absolute;
+  padding: 0;
+  font-size: 16px;
+  top: 50%;
+  left: 10px;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+  transform: translateY(-50%);
+}
+
+.regFormPasswordInput .regForm__passwordInput:focus + label {
+  top: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  transform: translateY(0);
+}
+
+.regFormPasswordInput .regForm__passwordInput:focus {
+  border-color: #0071eb;
+  outline: 0;
+}
+
+.regFormPasswordInput .error {
+  border-color: #b92d2b;
+}
+
+.regFormPasswordInput .valid {
+  border-color: #5fa53f;
+}
+
+.regFormButton {
+  margin-top: 24px;
+  text-align: center;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.regFormButton button {
+  min-height: 48px;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 2px;
+  padding: 0.75rem 25.333333px;
+  min-width: 110px;
+  width: 100%;
+  line-height: 19px;
+  color: #fff;
+  background-color: #e50914;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.regFormButton button:hover {
+  background-color: #f6121d;
+}
+
+.loading__img {
+  height: 22px;
+}
+
+.error__email {
+  margin-top: -8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.error__password {
+  font-size: 14px;
+}
+
+.error__username {
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}

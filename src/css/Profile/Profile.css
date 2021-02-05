@@ -1,0 +1,173 @@
+.profileScreen {
+  height: 100vh;
+  color: #fff;
+  background-color: #111;
+  display: flex;
+}
+
+.profileScreen__body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  max-width: 800px;
+}
+
+.profileScreen__details {
+  color: #fff;
+  margin-left: 25px;
+  flex: 1;
+}
+
+.profileScreen__details > h2 {
+  background-color: gray;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profileScreen__signout {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #e50914 0%,
+    #f45c43 51%,
+    #e50914 100%
+  );
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.profileScreen__signout:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.profileScreen__plans {
+  margin-top: 15px;
+}
+
+.profileScreen__plans > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+}
+
+.profileScreen__plans > p {
+  color: #8c8c8c;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.profileScreen__body > h1 {
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+}
+
+.profileScreen__info {
+  display: flex;
+}
+
+.profileScreen__info > img {
+  height: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.profileScreen__info > img:hover {
+  transform: scale(1.03);
+}
+
+.profilePlans {
+  padding: 8px;
+  margin: 10px 0px !important;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.profilePlan__info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.profilePlan__info:hover > h5 {
+  color: #f5f5f5;
+}
+
+.profilePlan__info:hover > p {
+  color: #f5f5f5;
+}
+
+.profilePlan__info > h5 {
+  color: #8c8c8c;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profilePlan__info > p {
+  color: #8c8c8c;
+  font-size: 0.7rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profilePlans > button {
+  padding: 6px 20px;
+  background-image: linear-gradient(
+    to right,
+    #e50914 0%,
+    #f45c43 51%,
+    #e50914 100%
+  );
+  outline: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profilePlans > button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.profilePlans__sub > button {
+  background-image: linear-gradient(
+    to right,
+    #808080 0%,
+    #3fada8 51%,
+    #808080 100%
+  );
+  transition: 0.5s;
+  font-weight: 400;
+  background-size: 200% auto;
+  border-radius: 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profilePlans__sub > button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,143 @@
+.profileOverlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.profileOverlay__close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.profileOverlay__card {
+  background-image: linear-gradient(
+    to right,
+    #e50914 0%,
+    #f45c43 51%,
+    #e50914 100%
+  );
+  width: 25vw;
+  height: 55vh;
+  border-radius: 20px;
+  z-index: 1000;
+  animation: animate 0.2s ease-in;
+  transition: 0.5s;
+  background-size: 200% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileOverlay__card > h1 {
+  margin-top: 15px;
+  border-bottom: 2px dotted #f5f5f5;
+}
+
+.profileOverlay__card:hover {
+  background-position: right center;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.profileOverlay__card--explaination {
+  width: 90%;
+  height: 85%;
+}
+
+.profileOverlay__card--explaination > h3 {
+  margin: 10px;
+  margin-top: 30px;
+  color: wheat;
+}
+
+.profileOverlay__card--explaination ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.profileOverlay__card--explaination ul li {
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+  font-weight: 500;
+}
+
+.profileOverlay__cardPurchase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profileOverlay__purchasePrice {
+  font-size: 2rem;
+}
+
+.profileOverlay__purchaseButton > button {
+  background-image: linear-gradient(
+    to right,
+    #ee9ca7 0%,
+    #ffdde1 51%,
+    #ee9ca7 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #111;
+  padding: 8px 30px;
+  border-radius: 3px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.profileOverlay__purchaseButton > button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 11px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profileOverlay__purchaseButton > button:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profileOverlay__purchasedButton > button {
+  background-image: linear-gradient(
+    to right,
+    #be93c5 0%,
+    #7bc6cc 51%,
+    #be93c5 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #111;
+}
+
+.profileOverlay__purchasedButton > button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #000;
+  text-decoration: none;
+}
